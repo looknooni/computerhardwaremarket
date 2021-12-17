@@ -2,22 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/' , 'IndexController@index')->name('welcome');
 
 Auth::routes();
+
+Route::middleware(['auth','VerifyIsAdmin'])->group(function(){
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -56,5 +49,17 @@ Route::get('/admin/services/delete/{id}','admin\ServicesController@delete');
 Route::get('/admin/users/index' , 'admin\UsersController@index')->name('users');
 Route::get('/admin/users/delete/{id}' , 'admin\UsersController@delete');
 
-//Welcome
-Route::post('/welcome','admin\WelcomeController@logout');
+//company
+Route::get('/admin/company/index','admin\CompanyController@index')->name('company');
+
+// -------------------- Front-End --------------------- //
+
+//Product
+Route::get('/page/product' , 'ProductController@index');
+
+//Cart
+Route::get('/page/cart' , 'frontend\CartController@index');
+
+//wishlist
+Route::get('/page/wishlist' , 'frontend\WishlistController@index');
+});

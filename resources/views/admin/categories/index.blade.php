@@ -65,8 +65,11 @@
                                 @endif
                                 <!-- End SweerAlert -->
 
-                                        <form action="{{url('/admin/services/create')}}" method="post">
+                                        <form action="{{url('/admin/categories/create')}}" method="post">
                                             {{csrf_field()}}
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                            <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="name" class="text-black">ชื่อหมวดหมู่</label>
                                                     <input class="form-control" type="name" name="name" id="name" placeholder="ชื่อหมวดหมู่สินค้า">
@@ -74,6 +77,18 @@
                                                     <span class="text-danger">{{$message}}</span>
                                                 @enderror
                                                 </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name" class="text-black">ชื่อภาษาอังกฤษ</label>
+                                                    <input class="form-control" type="name" name="engname" id="engname" placeholder="ชื่อหมวดหมู่สินค้าภาษาอังกฤษ">
+                                                @error('name')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                             <button type="submit" class="btn btn-primary btn-bottom">
                                                 <i class="fas fa-fw fa-check"></i>
                                                 <span>Submit</span>
@@ -86,6 +101,7 @@
                                                     <tr>
                                                         <th>ไอดี</th>
                                                         <th>หมวดหมู่สินค้า</th>
+                                                        <th>ภาษาอังกฤษ</th>
                                                         <th>จำนวนสินค้า</th>
                                                         <th>สร้างเมื่อ</th>
                                                         <th>แก้ไขเมื่อ</th>
@@ -98,6 +114,7 @@
                                                         <tr>
                                                             <td>{{$i->category_id}}</td>
                                                             <td>{{$i->name}}</td>
+                                                            <td>{{$i->engname}}</td>
                                                             <td>{{$i->product->count()}}</td>
                                                             <td>{{$i->created_at}}</td>
                                                             <td>{{$i->updated_at}}</td>

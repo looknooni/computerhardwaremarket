@@ -28,26 +28,29 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <section class="panel">
-                                        <form action="{{url('/admin/service/update/'.$service->service_id)}}" method="post" enctype="multipart-form-data">
+                                        <form action="{{url('/admin/services/update/'.$service->service_id)}}" method="post" enctype="multipart/form-data"">
                                             {{csrf_field()}}
                                             <div class="col-md-12">
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="name" class="text-black">ข้อความ</label>
-                                                                <input class="form-control" type="name" name="name" id="name" value="{{$service->name}}">
+                                                                <input class="form-control" type="text" name="name" id="name" value="{{$service->name}}">
                                                         @error('name')
                                                             <span class="text-danger">{{$message}}</span>
                                                         @enderror
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label for="name" class="text-black">รูปภาพ</label>
-                                                            <input class="form-control" type="file" name="image" id="image">
-                                                        @error('image')
+                                                            <input class="form-control" type="file" name="image" id="image" placeholder="รูปภาพ">
+                                                            @error('image')
                                                             <span class="text-danger">{{$message}}</span>
-                                                        @enderror
+                                                            @enderror
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <img id="showImage" src="{{asset('admin/img/'.$service->image)}}" width="150px">
                                                         </div>
                                                     </div>
                                                 </div>

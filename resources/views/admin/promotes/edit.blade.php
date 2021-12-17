@@ -28,7 +28,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <section class="panel">
-                                <form action="{{url('/admin/promotes/edit/'.$promote->promote_id)}}" method="POST" enctype="multipart/form-data">
+                                <form action="{{url('/admin/promotes/update/'.$promote->promote_id)}}" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <div class="col-md-12">
                                                 <div class="row">

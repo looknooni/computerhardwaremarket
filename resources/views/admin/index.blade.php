@@ -30,12 +30,11 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                จำนวนครั้งเข้าดูเว็บไซต์</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">825 ครั้ง</div>
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">หมวดหมู่สินค้าทั้งหมด</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $category->count() }}&nbsp;หมวดหมู่</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-user fa-2x text-gray-500"></i>
+                                            <i class="fas fa-archive fa-2x text-gray-500"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -48,12 +47,11 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                จำนวนสมาชิก</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">50 คน</div>
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">จำนวนสินค้า</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{$product->count()}}&nbsp;ชิ้น</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-address-card  fa-2x text-gray-500"></i>
+                                            <i class="fas fa-box-open  fa-2x text-gray-500"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -66,23 +64,22 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">รายการจัดส่งที่กำลังดำเนินการ
-                                            </div>
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">จำนวนสมาชิก</div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$user->count()}}&nbsp;คน</div>
                                                 </div>
-                                                <div class="col">
+                                                {{-- <div class="col">
                                                     <div class="progress progress-sm mr-2">
                                                         <div class="progress-bar bg-info" role="progressbar"
                                                             style="width: 70%" aria-valuenow="50" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-truck fa-2x text-gray-500"></i>
+                                            <i class="fas fa-users fa-2x text-gray-500"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -96,69 +93,13 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                คำสั่งซื้อที่รอการยืนยัน</div>
+                                                จำนวนการเข้าชมเว็บไซต์</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">12 รายการ</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-500"></i>
+                                            <i class="fas fa-laptop-house fa-2x text-gray-500"></i>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Row -->
-
-                    <div class="row">
-
-                        <!-- Card 1 -->
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="card shadow mb-4">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">จำนวนคำสั่งซื้อตามหมวดหมู่</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area login100-pic js-tilt" data-tilt>
-                                        <img src="{{asset('admin/img/icon/dollar.png')}}" class="icon-admin">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="card shadow mb-4">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">คำสั่งซื้อภายในเดือนนี้</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area login100-pic js-tilt" data-tilt>
-                                        <img src="{{asset('admin/img/icon/stock-market.png')}}" class="icon-admin">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">คำสั่งซื้อทั้งหมด</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area login100-pic js-tilt" data-tilt>
-                                        <img src="{{asset('admin/img/icon/dollars.png')}}" class="icon-admin">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card shadow h-100 w-100 py-2">
-                            <div class="card-body">
-                                <div class="text-xs font-weight-bold text-admin mb-1">
-                                    รายชื่อแอดมิน | สามารถจัดการระบบได้ทั้งหน้าบ้านและหลังบ้าน
                                 </div>
                             </div>
                         </div>
@@ -175,22 +116,21 @@
     </a>
 
     @include('layouts/admin/footer')
-<!--===============================================================================================-->	
-<script src="{{asset('Back_End/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
-<!--===============================================================================================-->
-	<script src="{{asset('Back_End/vendor/bootstrap/js/popper.js')}}"></script>
-	<script src="{{asset('Back_End/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
-<!--===============================================================================================-->
-	<script src="{{asset('Back_End/vendor/select2/select2.min.js')}}"></script>
-<!--===============================================================================================-->
-	<script src="{{asset('Back_End/vendor/tilt/tilt.jquery.min.js')}}"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="{{asset('Back_End/js/main.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('Back_End/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('Back_End/vendor/bootstrap/js/popper.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('Back_End/vendor/select2/select2.min.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('Back_End/vendor/tilt/tilt.jquery.min.js') }}"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('Back_End/js/main.js') }}"></script>
 </body>
 
 </html>

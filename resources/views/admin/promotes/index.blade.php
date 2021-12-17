@@ -99,8 +99,8 @@
                                                 <thead>
                                                     <tr>
                                                         <th>ไอดี</th> 
-                                                        <th>รูปภาพ</th>
                                                         <th>ข้อความ</th>
+                                                        <th>รูปภาพ</th>
                                                         <th>สร้างเมื่อ</th>
                                                         <th>แก้ไขเมื่อ</th>
                                                         <th>แก้ไข</th>
@@ -110,10 +110,10 @@
                                                 @foreach ($promote as $i)
                                                         <tr>
                                                             <td>{{$i->promote_id}}</td>
+                                                            <td>{{$i->name}}</td>
                                                             <td>
                                                                 <img src="{{asset('admin/img/'.$i->image)}}" alt="" style="width:100px">
                                                             </td>
-                                                            <td>{{$i->name}}</td>
                                                             <td>{{$i->created_at}}</td>
                                                             <td>{{$i->updated_at}}</td>
                                                             <td>

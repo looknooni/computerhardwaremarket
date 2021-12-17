@@ -24,6 +24,7 @@ class CategoriesController extends Controller
         ]);
         $category = new Category;
         $category->name = $request->name;
+        $category->engname = $request->engname;
         $category->save();
         return redirect('/admin/categories/index')->with('create','บันทึกข้อมูลสำเร็จ');
     }
@@ -44,6 +45,7 @@ class CategoriesController extends Controller
         ]);
         $category = Category::find($category_id);
         $category->name = $request->name;
+        $category->engname = $request->engname;
         $category->save();
         return redirect('/admin/categories/index')->with('update','แก้ไขข้อมูลแล้ว');
     }

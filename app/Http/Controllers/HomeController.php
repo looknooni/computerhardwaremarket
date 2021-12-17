@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Promote;
+use App\Product;
+use App\Category;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $promote = Promote::all();
+        $product = Product::all();
+        $category = Category::all();
+
+        return view('welcome',compact('promote','product','category'));
     }
 }

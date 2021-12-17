@@ -99,8 +99,8 @@
                                                 <thead>
                                                     <tr>
                                                         <th>ไอดี</th> 
-                                                        <th>รูปภาพ</th>
                                                         <th>ข้อความ</th>
+                                                        <th>รูปภาพ</th>
                                                         <th>สร้างเมื่อ</th>
                                                         <th>แก้ไขเมื่อ</th>
                                                         <th>แก้ไข</th>
@@ -123,15 +123,12 @@
                                                                 </a>
                                                             </td>
                                                             <td>
-                                                                <a href="{{url('/admin/services/delete/'.$i->service_id)}}">
-                                                                    <button type="submit" class="btn btn-danger">
-                                                                        <i class="fas fa-trash-alt"></i>
-                                                                    </button>
+                                                                <a href="{{url('/admin/services/delete/'.$i->service_id)}}" class="btn btn-danger">
+                                                                    <i class="fas fa-trash-alt"></i>
                                                                 </a>
                                                             </td>
                                                         </tr>
                                                     @endforeach
-
                                                 </tbody>
                                             </table>
                                         </div>

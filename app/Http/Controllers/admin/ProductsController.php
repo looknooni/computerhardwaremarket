@@ -40,7 +40,9 @@ class ProductsController extends Controller
         $product = new Product();
         $product->category_id = $request->category_id;
         $product->name = $request->name;
+        $product->details = $request->details;
         $product->price = $request->price;
+        $product->special_price = $request->special_price;
         if ($request->hasFile('image')) {
             $filename = Str::random(10) . '.' . $request->file('image')->getClientOriginalExtension();
             $request->file('image')->move(public_path() . '/admin/img/', $filename);
@@ -56,7 +58,7 @@ class ProductsController extends Controller
 
     public function edit($id)
     {
-        $product = product::find($id);
+        $product = Product::find($id);
         return view('admin.products.edit', compact('product'))
             ->with('categories', Category::all());
     }
@@ -92,12 +94,15 @@ class ProductsController extends Controller
             $product->image = $filename;
             $product->category_id = $request->category;
             $product->name = $request->name;
+            $product->details = $request->details;
             $product->price = $request->price;
         } else {
             $product = Product::find($products_id);
             $product->category_id = $request->category;
             $product->name = $request->name;
+            $product->details = $request->details;
             $product->price = $request->price;
+            $product->special_price = $request->special_price;
         }
         $product->save();
         // return redirect()->route('products')->with('update','อัพเดทข้อมูลแล้ว');

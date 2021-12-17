@@ -55,6 +55,12 @@
             <span>ข้อมูลลูกค้า</span></a>
     </li>
 
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="{{route('company')}}">
+            <i class="fas fa-address-card"></i>
+            <span>ข้อมูลบริษัท</span></a>
+    </li> --}}
+
     {{-- <hr class="sidebar-divider">
 
     <!-- Heading -->

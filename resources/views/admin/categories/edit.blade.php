@@ -30,6 +30,9 @@
                                 <section class="panel">
                                         <form action="{{url('/admin/categories/update/'.$category->category_id)}}" method="post">
                                             {{csrf_field()}}
+                                            <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="name" class="text-black">Name</label>
                                                 <input class="form-control" type="name" name="name" id="name" value="{{$category->name}}">
@@ -37,6 +40,18 @@
                                                     <span class="text-danger">{{$message}}</span>
                                                 @enderror
                                             </div>
+                                                </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name" class="text-black">ชื่อภาษาอังกฤษ</label>
+                                                    <input class="form-control" type="name" name="engname" id="engname" value="{{$category->engname}}">
+                                                @error('name')
+                                                    <span class="text-danger">{{$message}}</span>
+                                                @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                             <button type="submit" class="btn btn-primary btn-bottom">                                            
                                                 <i class="fas fa-fw fa-arrow-up"></i>
                                                 <span>อัพเดท</span>

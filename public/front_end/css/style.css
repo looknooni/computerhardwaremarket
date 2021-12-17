@@ -1,6 +1,11 @@
 /**********************************/
+
+
 /********** General CSS ***********/
+
+
 /**********************************/
+
 body {
     color: #353535;
     font-family: 'Open Sans', sans-serif;
@@ -39,8 +44,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******** Back to Top CSS *********/
+
+
 /**********************************/
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -65,8 +75,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********* Form Input CSS *********/
+
+
 /**********************************/
+
 .form-control,
 .custom-select {
     width: 100%;
@@ -118,8 +133,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******* Normal Slider CSS ********/
+
+
 /**********************************/
+
 .normal-slider .slick-prev,
 .normal-slider .slick-next {
     width: 40px;
@@ -198,8 +218,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Top Bar CSS ***********/
+
+
 /**********************************/
+
 .top-bar {
     padding: 3px 0;
     font-size: 14px;
@@ -221,9 +246,8 @@ h2 {
 
 @media (max-width: 575.98px) {
     .top-bar {
-        border-bottom: 1px solid rgba(255,255,255,.1);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
     }
-    
     .top-bar .col-sm-6:first-child,
     .top-bar .col-sm-6:last-child {
         text-align: center;
@@ -232,8 +256,13 @@ h2 {
 
 
 /**********************************/
+
+
 /*********** Nav Bar CSS **********/
+
+
 /**********************************/
+
 .nav {
     position: relative;
 }
@@ -258,12 +287,12 @@ h2 {
 }
 
 .nav .dropdown-menu a.active {
-    color: #353535;
+    color: #ffffff;
     background: #ffffff;
 }
 
 .dropdown-item {
-    color: #353535;
+    color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -271,17 +300,14 @@ h2 {
     .nav .navbar {
         background: #0094FF !important;
     }
-    
     .nav .navbar-brand {
         display: none;
     }
-    
     .nav .navbar-dark a.nav-link {
         color: #ffffff;
         font-size: 14px;
         text-transform: uppercase;
     }
-    
     .nav .navbar-dark a.nav-link:hover,
     .nav .navbar-dark a.nav-link.active {
         background: #ffae00;
@@ -293,16 +319,13 @@ h2 {
     .nav {
         padding: 5px 0;
     }
-    
     .nav,
     .nav .navbar {
         background: #000000 !important;
     }
-    
     .nav a.nav-link {
         padding: 5px 0;
     }
-    
     .nav .dropdown-menu {
         box-shadow: none;
     }
@@ -310,11 +333,17 @@ h2 {
 
 
 /**********************************/
+
+
 /********* Bottom Bar CSS *********/
+
+
 /**********************************/
+
 .bottom-bar {
     padding: 15px 0;
-    background: #0b0dad;
+    background: rgb(5, 0, 97);
+    background: linear-gradient(90deg, rgba(5, 0, 97, 1) 0%, rgba(0, 0, 157, 1) 31%, rgba(22, 0, 194, 1) 100%);
     margin-bottom: 30px;
 }
 
@@ -398,7 +427,6 @@ h2 {
         text-align: center;
         margin-bottom: 15px;
     }
-    
     .bottom-bar .user {
         margin-bottom: 0;
     }
@@ -406,11 +434,15 @@ h2 {
 
 
 /**********************************/
+
+
 /*********** Header CSS ***********/
+
+
 /**********************************/
+
 .header {
     margin-top: 20px;
-
 }
 
 .header .col-md-3,
@@ -421,13 +453,14 @@ h2 {
 .header .navbar {
     padding: 0;
     height: 100%;
-    max-height: 400px;
+    max-height: auto;
     overflow: hidden;
     background: #ffffff !important;
 }
 
 .header .navbar-nav {
     width: 100%;
+    height: 560px;
     padding: 15px 0;
 }
 
@@ -444,10 +477,10 @@ h2 {
     color: #353535;
     font-family: 'IBM Plex Sans Thai', sans-serif;
 }
+
 .header .navbar a:hover {
     color: #0094FF;
 }
-
 
 .header .navbar i {
     color: #0094FF;
@@ -462,11 +495,13 @@ h2 {
 
 .header-slider {
     position: relative;
-    width: 100%;
+    width: auto;
+    height: auto;
 }
 
 .header-slider .header-slider-item {
     position: relative;
+    height: fit-content;
 }
 
 .header-slider .header-slider-caption {
@@ -520,9 +555,9 @@ h2 {
 }
 
 .header .img-item img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .header .img-text {
@@ -539,7 +574,7 @@ h2 {
 }
 
 .header .img-text:hover {
-    opacity: 1;     
+    opacity: 1;
 }
 
 .header .img-text p {
@@ -553,13 +588,18 @@ h2 {
 }
 
 .header .img-text:hover p {
-    margin: 0;       
+    margin: 0;
 }
 
 
 /**********************************/
+
+
 /********* Breadcrumb CSS *********/
+
+
 /**********************************/
+
 .breadcrumb-wrap {
     position: relative;
     width: 100%;
@@ -573,10 +613,14 @@ h2 {
 }
 
 
+/**********************************/
+
+
+/********** Category CSS **********/
+
 
 /**********************************/
-/********** Category CSS **********/
-/**********************************/
+
 .category {
     position: relative;
     padding: 0 15px;
@@ -611,9 +655,9 @@ h2 {
 }
 
 .category .category-item img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .category .category-name {
@@ -630,7 +674,7 @@ h2 {
 }
 
 .category .category-name:hover {
-    opacity: 1;     
+    opacity: 1;
 }
 
 .category .category-name p {
@@ -644,13 +688,18 @@ h2 {
 }
 
 .category .category-name:hover p {
-    margin: 0;       
+    margin: 0;
 }
 
 
 /**********************************/
+
+
 /*********** Feature CSS **********/
+
+
 /**********************************/
+
 .feature {
     position: relative;
 }
@@ -686,15 +735,24 @@ h2 {
 
 
 /**********************************/
+
+
 /******** Product Item CSS ********/
+
+
 /**********************************/
+
 .product-item {
     position: relative;
 }
 
 .product-item .product-title {
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    min-height: 90px;
     background: #000000;
     transition: all .3s;
 }
@@ -748,7 +806,7 @@ h2 {
 }
 
 .product-item .product-image img {
-    width: 100%; 
+    width: 100%;
     transition: all .3s;
 }
 
@@ -773,20 +831,21 @@ h2 {
 }
 
 .product-item:hover .product-image .product-action {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .product-item .product-image .product-action a {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     margin-right: 5px;
-    padding: 7px 0 10px 0;
     font-size: 16px;
     text-align: center;
-    color: #ffffff;
-    background: #0094FF;
-    border: 1px solid #ffffff;
+    color: #0094FF;
+    background: #000000;
+    border: 1px solid #0094FF;
     border-radius: 4px;
     transition: all .3s;
     margin-top: 50px;
@@ -824,7 +883,7 @@ h2 {
 }
 
 .product-item .product-price h3 span {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .product-item .product-price .btn {
@@ -837,7 +896,7 @@ h2 {
 .product-item:hover .product-price .btn,
 .product-item .product-price .btn:hover {
     color: #0094FF;
-    background: #ffffff;
+    background: #000000;
 }
 
 .product-item .product-price .btn i {
@@ -846,8 +905,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******** Featured Product ********/
+
+
 /**********************************/
+
 .featured-product {
     position: relative;
     padding: 30px 0;
@@ -929,8 +993,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******** Product View CSS ********/
+
+
 /**********************************/
+
 .product-view {
     position: relative;
     width: 100%;
@@ -1053,8 +1122,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******* Product Detail CSS *******/
+
+
 /**********************************/
+
 .product-detail {
     position: relative;
     width: 100%;
@@ -1069,6 +1143,10 @@ h2 {
 .product-detail .product-detail-top {
     padding: 0;
     background: #ffffff;
+}
+
+.row {
+    height: fit-content;
 }
 
 .product-detail .product-slider-single img {
@@ -1303,8 +1381,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Sidebar CSS ***********/
+
+
 /**********************************/
+
 .sidebar-widget {
     padding: 30px;
     background: #ffffff;
@@ -1369,11 +1452,11 @@ h2 {
 }
 
 .sidebar-widget.brands ul li {
-    margin-bottom: 12px; 
+    margin-bottom: 12px;
 }
 
 .sidebar-widget.brands ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .sidebar-widget.brands ul li a {
@@ -1402,7 +1485,7 @@ h2 {
 }
 
 .sidebar-widget.brands ul li a:hover {
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 .sidebar-widget.brands ul li span {
@@ -1415,6 +1498,7 @@ h2 {
 
 .sidebar-widget.widget-slider {
     position: relative;
+    height: fit-content;
 }
 
 .sidebar-widget.image a {
@@ -1454,8 +1538,13 @@ h2 {
 
 
 /**********************************/
+
+
 /************ Cart CSS ************/
+
+
 /**********************************/
+
 .cart-page {
     position: relative;
     margin-top: 30px;
@@ -1652,8 +1741,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Wishlist CSS **********/
+
+
 /**********************************/
+
 .wishlist-page {
     position: relative;
     padding: 30px 0;
@@ -1749,8 +1843,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Checkout CSS **********/
+
+
 /**********************************/
+
 .checkout {
     position: relative;
     padding-top: 30px;
@@ -1842,8 +1941,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********* My Account CSS *********/
+
+
 /**********************************/
+
 .my-account {
     position: relative;
     padding: 30px 0;
@@ -1898,8 +2002,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******* Call to Action CSS *******/
+
+
 /**********************************/
+
 .call-to-action {
     position: relative;
     padding: 30px 0;
@@ -1939,7 +2048,6 @@ h2 {
     .call-to-action .col-md-6:last-child {
         text-align: center;
     }
-    
     .call-to-action h1 {
         margin-bottom: 20px;
     }
@@ -1947,8 +2055,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********* Newsletter CSS *********/
+
+
 /**********************************/
+
 .newsletter {
     position: relative;
     padding: 30px 0;
@@ -2000,11 +2113,9 @@ h2 {
     .newsletter {
         text-align: center;
     }
-    
     .newsletter h1 {
         margin-bottom: 20px;
     }
-    
     .newsletter .form {
         margin: 0 auto;
     }
@@ -2012,8 +2123,13 @@ h2 {
 
 
 /**********************************/
+
+
 /*********** Brand CSS ************/
+
+
 /**********************************/
+
 .brand {
     position: relative;
     margin-bottom: 30px;
@@ -2022,12 +2138,12 @@ h2 {
 }
 
 .brand .brand-item {
-    text-align: center; 
+    text-align: center;
 }
 
 .brand .brand-item img {
     max-width: 100%;
-    margin: auto; 
+    margin: auto;
 }
 
 .brand .slick-prev,
@@ -2091,8 +2207,13 @@ h2 {
 
 
 /**********************************/
+
+
 /*********** Review CSS ***********/
+
+
 /**********************************/
+
 .review {
     margin-bottom: 30px;
 }
@@ -2115,9 +2236,9 @@ h2 {
 }
 
 .review .review-img img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .review .review-text {
@@ -2161,8 +2282,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Contact CSS ***********/
+
+
 /**********************************/
+
 .contact {
     position: relative;
     padding-top: 30px;
@@ -2228,8 +2354,13 @@ h2 {
 
 
 /**********************************/
+
+
 /****** Register & Login CSS ******/
+
+
 /**********************************/
+
 .login {
     position: relative;
     padding-top: 30px;
@@ -2244,8 +2375,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Footer CSS ************/
+
+
 /**********************************/
+
 .footer {
     position: relative;
     padding: 30px 0 0 0;
@@ -2260,7 +2396,7 @@ h2 {
 .footer .footer-widget h2 {
     font-size: 25px;
     white-space: nowrap;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .footer .footer-widget ul {
@@ -2270,11 +2406,11 @@ h2 {
 }
 
 .footer .footer-widget ul li {
-    margin-bottom: 12px; 
+    margin-bottom: 12px;
 }
 
 .footer .footer-widget ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .footer .footer-widget ul li a {
@@ -2338,7 +2474,7 @@ h2 {
 .footer .payment {
     padding-top: 25px;
     padding-bottom: 25px;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 @media (min-width: 992px) {
@@ -2365,11 +2501,10 @@ h2 {
     .footer .payment-method {
         margin-bottom: 15px;
     }
-    
     .footer .payment-method,
     .footer .payment-security {
-        text-align: center; 
-    } 
+        text-align: center;
+    }
 }
 
 .footer .payment-method h2,
@@ -2388,8 +2523,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******** Footer Bottom CSS *******/
+
+
 /**********************************/
+
 .footer-bottom {
     margin-top: 20px;
     position: relative;
@@ -2425,8 +2565,8 @@ h2 {
 @media (max-width: 768.98px) {
     .footer-bottom .copyright,
     .footer-bottom .template-by {
-        text-align: center; 
-    } 
+        text-align: center;
+    }
 }
 
 .device {
@@ -2442,7 +2582,7 @@ h2 {
     color: #000000;
     border: 1px solid #ebebeb;
     font-family: 'IBM Plex Sans Thai', sans-serif;
-    font-size : 24px;
+    font-size: 24px;
     /*height: 50px;*/
     margin-top: 40px;
     width: 630px;
@@ -2455,4 +2595,80 @@ h2 {
 .font-drop {
     font-family: 'IBM Plex Sans Thai', sans-serif;
     font-size: 14px;
+}
+
+.row-category {
+    height: fit-content;
+}
+
+.card-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.section-shadow {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.category-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.block {
+    position: relative;
+    margin: 1px auto 0;
+    width: 1040px;
+    height: auto;
+}
+
+.block:before,
+.block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(3px);
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+.scroller {
+    overflow: auto;
+}
+
+.scroller::-webkit-scrollbar {
+    width: 20px;
+}
+
+.scroller::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: #ffffff;
 }
