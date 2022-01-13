@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/' , 'IndexController@index')->name('welcome');
 
 //ค้นหาข้อมูลตามหมวดหมู่
-
+Route::get('/products/categories/{}');
 
 Auth::routes();
 
