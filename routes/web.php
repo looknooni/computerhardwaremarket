@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/' , 'IndexController@index')->name('welcome');
 
+//ค้นหาข้อมูลตามหมวดหมู่
+
+
 Auth::routes();
 
 Route::middleware(['auth','VerifyIsAdmin'])->group(function(){

@@ -2324,9 +2324,8 @@ h2 {
 }
 
 .contact .social a {
-    display: inline-block;
     margin: 10px 10px 0 0;
-    width: 40px;
+    width: 150px;
     height: 40px;
     padding: 5px 0;
     text-align: center;
@@ -2345,11 +2344,6 @@ h2 {
 
 .contact .social a:hover i {
     color: #ffffff;
-}
-
-.contact .contact-map iframe {
-    width: 100%;
-    height: 450px;
 }
 
 
@@ -2385,6 +2379,8 @@ h2 {
 .footer {
     position: relative;
     padding: 30px 0 0 0;
+    background: #000000;
+    color: #ffffff;
 }
 
 .footer .footer-widget {
@@ -2414,7 +2410,7 @@ h2 {
 }
 
 .footer .footer-widget ul li a {
-    color: #353535;
+    color: #ffffff;
     white-space: nowrap;
     display: block;
     line-height: 23px;
@@ -2460,8 +2456,8 @@ h2 {
     padding: 6px 0;
     text-align: center;
     font-size: 18px;
-    color: #353535;
-    border: 1px solid #353535;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     transition: all .3s;
 }
@@ -2474,7 +2470,7 @@ h2 {
 .footer .payment {
     padding-top: 25px;
     padding-bottom: 25px;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media (min-width: 992px) {

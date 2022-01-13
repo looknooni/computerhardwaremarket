@@ -43,11 +43,11 @@
             <span>โปรโมท</span></a>
     </li>
 
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="{{route('services')}}">
             <i class="fas fa-fw fa-wrench"></i>
             <span>บริการอื่น</span></a>
-    </li>
+    </li> --}}
 
     <li class="nav-item">
         <a class="nav-link" href="{{route('users')}}">
@@ -55,11 +55,11 @@
             <span>ข้อมูลลูกค้า</span></a>
     </li>
 
-    {{-- <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link" href="{{route('company')}}">
             <i class="fas fa-address-card"></i>
             <span>ข้อมูลบริษัท</span></a>
-    </li> --}}
+    </li>
 
     {{-- <hr class="sidebar-divider">
 
